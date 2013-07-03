@@ -1,6 +1,6 @@
 # ActivemodelErrorsType
 
-TODO: Write a gem description
+Allows to get errors type from an activemodel class, as a symbol, prior to the translation 
 
 ## Installation
 
@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+On any active model class, after calling ``save`` or ``valid?`` or anything that triggers the validation :
+
+    model.errors.with_types
+    
+You will get a hash, for example :
+
+    {
+      :key1 => :inclusion,
+      :key2 => :blank
+    }
 
 ## Contributing
 
