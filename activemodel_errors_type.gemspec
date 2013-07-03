@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "activemodel_errors_type"
   spec.version       = ActivemodelErrorsType::VERSION
   spec.authors       = ["Adrien Siami"]
-  spec.email         = ["adrien.siami@dimelo.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["adrien@siami.fr"]
+  spec.description   = "Allows to get errors type from an activemodel class, as a symbol, prior to the translation "
+  spec.summary       = "Allows to get errors type from an activemodel class, as a symbol, prior to the translation "
+  spec.homepage      = "https://github.com/Intrepidd/activemodel_errors_type"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
