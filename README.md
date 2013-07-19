@@ -25,8 +25,8 @@ On any active model class, after calling ``save`` or ``valid?`` or anything that
 You will get a hash, for example :
 
     {
-      :key1 => :inclusion,
-      :key2 => :blank
+      :key1 => [:inclusion],
+      :key2 => [:blank, :numericality]
     }
 
 ## Contributing
