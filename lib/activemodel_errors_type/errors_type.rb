@@ -13,7 +13,8 @@ module ActiveModelErrorsType
     end
 
     def generate_message_with_errors(attribute, type = :invalid, options = {})
-      @errors_type[attribute.to_sym] = type
+      @errors_type[attribute.to_sym] ||= []
+      @errors_type[attribute.to_sym] << type
       generate_message_without_errors(attribute, type, options)
     end
 
